@@ -1,0 +1,14 @@
+#!/bin/bash
+# Install script by openCavalier, first program on easypkg!
+i=(which hello)
+echo "This installs hello"
+cp ./hello /usr/bin/
+chmod +x /usr/bin/hello
+if [ "$i" = "" ] ; then
+  echo "Installation has failed :("
+fi
+if [ "$i" = "/usr/bin/hello" ] ; then
+  echo "Installation has succeeded"
+fi
+
+ 
